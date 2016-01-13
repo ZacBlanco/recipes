@@ -5,17 +5,18 @@ layout: default
 <div class="home">
 
   <h1 class="page-heading">Recipes</h1>
-  <input id="search-bar" style="display:block; float:right" type="search">Search</input>
+  <input id="search-bar" type="text">
 
   <div class="recipe-container">
     {% for post in site.posts %}
     <div class="recipe">
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-          <h6>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <a class="recipe-link" href="{{ post.url | prepend: site.baseurl }}"></a> 
+        <h6>
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          </h6>
+        </h6>
           <img src="{{ post.image }}"></img>
-    </div>
+      </div>
     {% endfor %}
   </div>
 
