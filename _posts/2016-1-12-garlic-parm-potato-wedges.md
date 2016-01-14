@@ -3,6 +3,7 @@ layout: post
 title:  "Garlic Parmesean Potato Wedges"
 date:   2016-01-12
 categories: apps and sides
+image: "/images/garlic-parm-potatos.jpg"
 ---
 
 Here's how to make delicious garlic parmesean potato wedges. First, get all the ingredients you need:
